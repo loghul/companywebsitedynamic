@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Loghul Private Limited</title>
+    <link rel="stylesheet" href="{% static 'css/website.css' %}">
+    <link rel = "icon" href ="{% static 'img/icon/icon.png' %}" type = "image/x-icon"> 
+              
+</head>
+
+<body>
+    <div class="container">
+    <div class="banner">
+        Loghul Private Limited
+    </div>
+    <div class="menu">
+        <div class="menuitem"><a href="/home">Home</a></div> 
+        <div class="menuitem"><a href="/product">Products</a></div> 
+        <div class="menuitem"><a href="/people">People</a></div>
+        <div class="menuitem"><a href="/contact">Contact Us</a></div> 
+    </div><div class="content">
+    {% block content %}    
+    {% endblock  %}
+    </div>
+    <div class="footer">
+        Copyright © 2021 Loghul Private Limited, Developed by Loghul.
+    </div>
+    </div>
+</body>
+
+</html>
